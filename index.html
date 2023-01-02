@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head><link rel="stylesheet" href="index.css">
+  <title>Pixel to Em Converter</title>
+</head>
+<body>
+    <header>
+  <h1>Pixel to Em Converter</h1>
+  <p>Simple Pixel to Em Coverter chrome extension</p>
+    </header>
+  <form>
+    <label for="pixels">Pixels:</label><br>
+    <input type="text" id="pixels" name="pixels"><br>
+    <label for="font-size">Font Size (px):</label><br>
+    <input type="text" id="font-size" name="font-size"><br>
+    <button type="button" onclick="convert()">Convert</button>
+  </form> 
+  <p class="bottom">Result: <span id="result"></span></p>
+  <script src="index.js"></script>
+</body>
+</html>
