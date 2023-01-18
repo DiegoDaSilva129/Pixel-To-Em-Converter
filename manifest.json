@@ -2,11 +2,15 @@
     "manifest_version": 3,
     "version": "1.0",
     "name": "Pixel to Em",
-    "action": {
+    "browser_action": {
         "default_popup": "index.html",
         "default_icon": "logo.png"
     },
     "permissions": [
-        "tabs"
-    ]
+        "clipboard"
+    ],
+    "background": {
+        "persistent": true,
+        "scripts": ["background.js"]
+    }
 }

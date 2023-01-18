@@ -1,16 +1,49 @@
-html, body {
-    padding: 0;
+form {
+    padding: 20px;
+    margin: 20px;
+}
+  
+label, input {
+    margin-bottom: 10px;
+}
+button {
+    background-color: #4CAF50; /* green */
+    color: white;
+    padding: 14px 20px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+}
+  
+button:hover {
+    background-color: #3e8e41;
+}
+.center {
     display: flex;
-    flex-direction: column;
-    background-color: beige;
-    width: 375px;
+    align-items: center;
+    justify-content: center;
+}
+  
+#result {
+    margin-left: 10px;
 }
 
-header{
-    background-color: beige;
+.copied {
+    background-color: green;
+    color: white;
 }
-
-body{
-    border: 1px solid black;
-    margin: 10px;
-}
+header h1 {
+    font-size: 2em;
+    font-weight: bold;
+  }
+  
+  header p {
+    font-size: 1.2em;
+    font-weight: lighter;
+  }
+  
+  label {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  

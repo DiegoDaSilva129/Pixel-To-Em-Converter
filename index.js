@@ -1,3 +1,11 @@
+document.getElementById("convert-button").addEventListener("click", convert);
+document.getElementById("copy-button").addEventListener("click", function() {
+  copyToClipboard();
+  document.getElementById("copy-button").classList.add("copied");
+});
+
+
+
 function convert() {
   // Get the pixel and font size values from the form
   var pixels = document.getElementById('pixels').value;
@@ -13,6 +21,17 @@ function convert() {
   } else {
     // Display an error message if one of the fields is empty
     document.getElementById('result').innerHTML = 'Error: Please enter a value for both fields.';
+  }
+}
+
+async function copyToClipboard() {
+  // Get the result element
+  var result = document.getElementById('result').innerHTML;
+
+  try {
+    await navigator.clipboard.writeText(result);
+  } catch (err) {
+    console.error('Failed to copy. Please try again.');
   }
 }
 
